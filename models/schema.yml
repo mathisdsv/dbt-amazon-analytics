@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_amazon           # Nom logique interne à dbt
+    database: amazon-486510    #ID de projet
+    schema: amazon_analytics   #Dataset 
+    tables:
+      - name: sales     #Table
+        identifier: amazon_sales #What is the exact name of the table in  BQ
+        columns:
+          - name: orders_id 
