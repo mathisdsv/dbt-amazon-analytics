@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'Amazon_sales'
+name: 'amazon_sales'
 version: '1.0.0'
 config-version: 2
 
@@ -36,14 +36,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  Amazon_sales:
+  amazon_sales:
     # Par défaut, on garde des vues (léger, rapide)
     +materialized: view
     
-    marts:
+    mart:
       +materialized: table
     
-    intermediate:
+    Intermediate:
       +materialized: table
  
     staging:
